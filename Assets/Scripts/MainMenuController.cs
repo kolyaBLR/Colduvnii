@@ -29,7 +29,7 @@ public class MainMenuController : MonoBehaviour {
 
 	public void newGameOnClick() {
 		Debug.Log("newGameOnClick");
-		Application.LoadLevel("LevelsListScene");
+		Application.LoadLevel("GameScene");
 	}
 
 	public void inventoryOnClick() {
