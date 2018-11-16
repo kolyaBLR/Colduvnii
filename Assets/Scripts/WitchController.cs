@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class WitchController : MonoBehaviour {
 
-    public float horizontalSpeed;
-    public float verticalSpeed;
+    public Vector2 speed;
 	private Rigidbody2D rb2D;
 
 	private void Start()
@@ -16,11 +15,11 @@ public class WitchController : MonoBehaviour {
 	void FixedUpdate () {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-		HandleMovement(horizontal, vertical);
+		HandleMovement(new Vector2(horizontal, vertical));
 	}
 
-    private void HandleMovement(float horizontal, float vertical)
+    private void HandleMovement(Vector2 position)
     {
-        rb2D.velocity = new Vector2(horizontal * horizontalSpeed, vertical * verticalSpeed);
+        rb2D.velocity = new Vector2(position.x * speed.x, position.y * speed.y);
     }
 }

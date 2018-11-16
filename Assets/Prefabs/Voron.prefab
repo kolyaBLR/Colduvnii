@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212857858222296692}
   - component: {fileID: 60591775571478254}
   - component: {fileID: 50036891760782504}
+  - component: {fileID: 114324397044359986}
   m_Layer: 0
   m_Name: Voron
   m_TagString: Untagged
@@ -53,7 +54,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -330,6 +331,18 @@ PolygonCollider2D:
       - {x: 0.60499996, y: 1.035}
       - {x: 0.60499996, y: 1.045}
       - {x: 0.575, y: 1.0749999}
+--- !u!114 &114324397044359986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093523483281216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c3b629db8174766af6674e6ddbeced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 0.8, y: 0.4}
 --- !u!212 &212857858222296692
 SpriteRenderer:
   m_ObjectHideFlags: 1

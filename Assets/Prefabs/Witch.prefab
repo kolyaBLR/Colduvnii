@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212258161862337652}
   - component: {fileID: 60153709916451664}
   - component: {fileID: 50206819304638620}
+  - component: {fileID: 114141207695957050}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -61,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &60153709916451664
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -196,6 +197,18 @@ PolygonCollider2D:
       - {x: 0.255, y: -0.295}
     - - {x: 0.035, y: 0.175}
       - {x: 0.044999998, y: 0.185}
+--- !u!114 &114141207695957050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1193860491498540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02ab5caeeafc4f34ab1958605a028ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 8, y: 6}
 --- !u!212 &212258161862337652
 SpriteRenderer:
   m_ObjectHideFlags: 1
