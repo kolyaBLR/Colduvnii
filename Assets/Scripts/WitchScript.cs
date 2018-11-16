@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WitchController : MonoBehaviour {
+public class WitchScript : MonoBehaviour {
 
     public Vector2 speed;
 	private Rigidbody2D rb2D;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveController : MonoBehaviour {
+public class MoveScript : MonoBehaviour {
 
 	public Vector2 speed;
 

@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.UI;
 
-public class MainMenuController : MonoBehaviour {
+public class MainMenuScript : MonoBehaviour {
 
 	public Button newGame;
 	public Button inventory;
