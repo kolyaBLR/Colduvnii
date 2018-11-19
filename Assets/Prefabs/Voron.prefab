@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 60591775571478254}
   - component: {fileID: 50036891760782504}
   - component: {fileID: 114324397044359986}
+  - component: {fileID: 114949226759143102}
   m_Layer: 0
   m_Name: Voron
   m_TagString: Untagged
@@ -342,7 +343,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a94b419ed1542d992cfbd4b63a5342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0.8, y: 0.4}
+  speed: {x: 4, y: 1}
+  direction: {x: -1, y: 0}
+  movement: {x: 0, y: 0}
+--- !u!114 &114949226759143102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093523483281216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f653edfbe3b44523a90b91a058ca523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 3
+  isEnimy: 1
 --- !u!212 &212857858222296692
 SpriteRenderer:
   m_ObjectHideFlags: 1

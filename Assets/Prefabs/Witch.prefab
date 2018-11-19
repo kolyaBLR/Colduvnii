@@ -21,8 +21,10 @@ GameObject:
   - component: {fileID: 4985784094934694}
   - component: {fileID: 212677270532065758}
   - component: {fileID: 60685957127938688}
-  - component: {fileID: 114445582963584756}
   - component: {fileID: 50416896483639196}
+  - component: {fileID: 114445582963584756}
+  - component: {fileID: 114347151696621218}
+  - component: {fileID: 114493098321945228}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -275,6 +277,19 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1999651406835980}
   m_Enabled: 1
+--- !u!114 &114347151696621218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1459834985926480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f653edfbe3b44523a90b91a058ca523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 3
+  isEnemy: 0
 --- !u!114 &114445582963584756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -287,6 +302,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 7, y: 4}
+--- !u!114 &114493098321945228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1459834985926480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c83194a1e6a49f887e9523d67ec397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 4180783817790674, guid: 7f769730af00b4a429ce984d8aaf2950, type: 2}
+  shootingRate: 0.25
 --- !u!212 &212677270532065758
 SpriteRenderer:
   m_ObjectHideFlags: 1

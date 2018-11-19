@@ -16,6 +16,15 @@ public class WitchScript : MonoBehaviour {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 		HandleMovement(new Vector2(horizontal, vertical));
+
+        bool shot = Input.GetButtonDown("Fire1");
+        shot |= Input.GetButtonDown("Fire2");
+        if (shot) {
+            WeaponScript weapon = GetComponent<WeaponScript>();
+            if (weapon != null) {
+                weapon.AttackRight(false);
+            }
+        }
 	}
 
     private void HandleMovement(Vector2 position)

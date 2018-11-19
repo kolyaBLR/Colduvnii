@@ -6,6 +6,10 @@ public class MoveScript : MonoBehaviour {
 
 	public Vector2 speed;
 
+	public Vector2 direction = new Vector2(-1, 0);
+
+	public Vector2 movement;
+
 	private Rigidbody2D rb2D;
 
 	void Start () {
@@ -13,6 +17,7 @@ public class MoveScript : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-		rb2D.velocity = new Vector2((rb2D.velocity.x - 1) * speed.x, (rb2D.velocity.y - 1) * speed.y);
+		movement = new Vector2(direction.x * speed.x, direction.y * speed.y);
+		rb2D.velocity = movement;
 	}
 }
