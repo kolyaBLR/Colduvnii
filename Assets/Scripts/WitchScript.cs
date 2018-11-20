@@ -12,6 +12,24 @@ public class WitchScript : MonoBehaviour {
 		rb2D = GetComponent<Rigidbody2D>();
     }
 
+	private void OnCollisionEnter2D(Collision2D collision) {
+		bool damagePlayer = false;
+		EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
+		if (enemy != null) {
+			HealthScript enemyHealth = enemy.GetComponent<HealthScript>();
+			if (enemyHealth != null) {
+				enemyHealth.Damage(enemyHealth.hp);
+			}
+			damagePlayer = true;
+		}
+		if (damagePlayer) {
+			HealthScript playerHealth = GetComponent<HealthScript>();
+			if (playerHealth != null) {
+				playerHealth.Damage(1);
+			}
+		}
+	}
+
 	void FixedUpdate () {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
