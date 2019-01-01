@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour {
 
@@ -22,33 +23,24 @@ public class MainMenuScript : MonoBehaviour {
 		settings.onClick.AddListener(settingsOnClick);
 		exit.onClick.AddListener(exitOnClick);
 	}
-	
-	void Update () {
-	
-	}
 
 	public void newGameOnClick() {
-		Debug.Log("newGameOnClick");
-		Application.LoadLevel("GameScene");
+		SceneManager.LoadScene("GameScene");
 	}
 
 	public void inventoryOnClick() {
-		Debug.Log("inventoryOnClick");
-		Application.LoadLevel("InventoryScene");
+		SceneManager.LoadScene("InventoryScene");
 	}
 
 	public void shopOnClick() {
-		Debug.Log("shopOnClick");
-		Application.LoadLevel("ShopScene");
+		SceneManager.LoadScene("ShopScene");
 	}
 
 	public void settingsOnClick() {
-		Debug.Log("settingsOnClick");
-		Application.LoadLevel("SettingsScene");
+		SceneManager.LoadScene("SettingsScene");
 	}
 
 	public void exitOnClick() {
-		Debug.Log("exitOnClick");
 		Application.Quit();
 	}
 }

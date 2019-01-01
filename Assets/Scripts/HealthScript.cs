@@ -6,14 +6,17 @@ public class HealthScript : MonoBehaviour {
 
 	public int hp = 3;
 
+	private int defaultHp;
+
 	public bool isEnemy = true;
 
-	void Start () {
-		
+	private void Start () {
+		defaultHp = hp;
+		Restart();
 	}
-	
-	void Update () {
-		
+
+	public void Restart() {
+		hp = defaultHp;
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
